@@ -1,0 +1,70 @@
+require("config")
+
+---------- GENERAL SETTING ----------
+--local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+--if not vim.loop.fs_stat(lazypath) then
+--  vim.fn.system({
+--    "git",
+--    "clone",
+--    "--filter=blob:none",
+--    "https://github.com/folke/lazy.nvim.git",
+--    "--branch=stable", -- latest stable release
+--    lazypath,
+--  })
+--end
+--vim.opt.rtp:prepend(lazypath)
+--
+--
+---- disable netrw at the very start of your init.lua
+--vim.g.loaded_netrw = 1
+--vim.g.loaded_netrwPlugin = 1
+--
+---- set termguicolors to enable highlight groups
+--vim.opt.termguicolors = true
+--
+---- Set highlight on search
+--vim.o.hlsearch = true
+--
+---- Make line numbers default
+--vim.wo.number = true
+--
+---- Enable mouse mode
+--vim.o.mouse = 'a'
+--
+---- Sync clipboard between OS and Neovim
+--vim.o.clipboard = 'unnamedplus'
+--
+---- Save undo history
+--vim.o.undofile = true
+--
+--
+------------ PLUGINS ----------
+--
+----local plugins = {
+--{ "ellisonleao/gruvbox.nvim", priority = 1000 , config = true}
+--}
+--
+--local opts = {}
+--
+--
+----require("lazy").setup(plugins, opts)
+----require("gruvbox").setup()
+--
+--
+------------ GENERAL SETTINGS ----------
+--
+--
+--
+---- Keymaps     mode | key comb | functionality
+--
+---- Write to cmd + s
+--vim.keymap.set({"n"}, "<D-s>", ":w<CR>")
+--
+---- 
+--vim.keymap.set({"n"}, "<D-Z>", "u")
+--
+--vim.keymap.set({"n"}, "<D-Y>", "<C-R>")
+--
+
+
+
