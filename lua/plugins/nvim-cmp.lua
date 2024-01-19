@@ -1,7 +1,7 @@
 
 return {
     "hrsh7th/nvim-cmp",
-    --event = "InsertEnter",
+    event = "InsertEnter",
     dependencies = {
 	"hrsh7th/cmp-nvim-lsp",
 	"hrsh7th/cmp-buffer",
@@ -26,11 +26,5 @@ return {
 	    })
 
 	})
-
-	--local capabilities = require("cmp_nvim_lsp").default_capabilities()
-	--require("lspconfig").clangd.setup({
-	--    capabilities = capabilities
-	--})
-
     end
 }
