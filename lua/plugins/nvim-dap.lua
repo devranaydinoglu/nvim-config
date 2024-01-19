@@ -12,7 +12,7 @@ return {
 
 	dap.configurations.cpp = {
 	    {
-		name = "Launchh",
+		name = "Launch",
 		type = "lldb",
 		request = "launch",
 		program = function()
@@ -24,7 +24,10 @@ return {
 	    }
 	}
 
-	vim.keymap.set("n", "<leader>db", "<cmd>DapToggleBreakpoint<CR>")
-	vim.keymap.set("n", "<leader>ds", "<cmd>DapContinue<CR>")
+	vim.keymap.set("n", "<leader>db", function() dap.toggle_breakpoint() end)
+	vim.keymap.set("n", "<F5>", function() dap.continue() end)
+	vim.keymap.set("n", "<F10>", function() dap.step_over() end)
+	vim.keymap.set("n", "<F11>", function() dap.step_into() end)
+
     end
 }
